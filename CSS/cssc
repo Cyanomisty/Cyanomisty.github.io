@@ -8,7 +8,7 @@ h1{ text-align: center;}
     color: pink;
 }
 .font-size-10(
-    font-size: 15rem
+    font-size: 15rem;
 )
 .font-roboto(
     font-family: "roboto", times,sans-serif
