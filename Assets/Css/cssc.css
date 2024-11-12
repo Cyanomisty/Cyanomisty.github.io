@@ -13,3 +13,8 @@ h1{ text-align: center;}
 .font-roboto(
     font-family: "roboto", times,sans-serif
 )
+a:link(
+    color:blue;
+a:hover{
+    color;yeelow;
+)
