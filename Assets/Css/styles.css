@@ -65,13 +65,14 @@ header p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 /* Interactive Card */
 .interactive-card {
     position: relative;
     width: 100%;
-    height: 200px; /* Fixed height */
+    height: 200px; /* Fixed height for consistency */
     perspective: 1000px; /* Enables 3D effect */
 }
 
@@ -94,7 +95,7 @@ header p {
 .card-front {
     background-color: #fff;
     color: #333;
-    z-index: 2; /* Ensures the front is above the back initially */
+    z-index: 2; /* Ensure it's on top initially */
 }
 
 /* Back Side */
@@ -104,13 +105,13 @@ header p {
     transform: rotateY(180deg); /* Starts flipped */
 }
 
-/* Flip the card */
+/* Flip the Card */
 .interactive-card:hover .card-front {
     transform: rotateY(180deg); /* Flips the front */
 }
 
 .interactive-card:hover .card-back {
-    transform: rotateY(0); /* Flips the back to face forward */
+    transform: rotateY(0); /* Reveals the back */
 }
 
 .skill {
