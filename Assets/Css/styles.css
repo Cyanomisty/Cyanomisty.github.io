@@ -60,6 +60,27 @@ header p {
     border-bottom: 2px solid #ddd;
     padding-bottom: 0.5rem;
 }
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.progress {
+    background-color: #4caf50; /* Green progress bar */
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px; /* Matches the height for centering text */
+    font-size: 0.9rem;
+}
 
 footer {
     text-align: center;
