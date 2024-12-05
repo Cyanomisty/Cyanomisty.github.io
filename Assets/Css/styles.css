@@ -100,7 +100,7 @@ header p {
 
 /* Back Side */
 .card-back {
-    background-color: #4caf50; /* Green background for the back */
+    background-color: #c2c4d1; /* Green background for the back */
     color: #fff;
     transform: rotateY(180deg); /* Starts flipped */
 }
