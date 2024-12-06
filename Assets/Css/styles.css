@@ -100,8 +100,8 @@ header p {
 
 /* Front Side */
 .card-front {
-    background-color: #f4b400; /* Yellowish contrasting color */
-    color: #fff; /* White text for better contrast */
+    background-color: #005f73; /* Muted teal for a professional look */
+    color: #fff; /* White text for contrast */
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -111,11 +111,14 @@ header p {
     padding: 1rem; /* Add padding for text */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
 /* Back Side */
 .card-back {
-    background-color: #4caf50;
-    color: #fff;
+    background-color: #94d2bd; /* Soft pastel green for a calm and clean look */
+    color: #333; /* Dark text for readability */
     transform: rotateY(180deg);
+    border-radius: 8px; /* Keep consistent rounded corners */
+    padding: 1rem; /* Add padding for spacing */
 }
 
 /* Flip the Card */
