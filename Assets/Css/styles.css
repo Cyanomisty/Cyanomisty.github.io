@@ -136,26 +136,44 @@ header p {
 }
 /* Skills Section */
 .skill {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; /* Space between skills */
 }
+
+.skill p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem; /* Space between text and progress bar */
+    color: #333;
+    font-weight: bold;
+}
+
 .progress-bar {
-    background-color: #f4f4f9;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 20px;
-    width: 100%;
-    border: 1px solid #ddd;
+    background-color: #f4f4f9; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow of the progress */
+    height: 20px; /* Height of the bar */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Border around the bar */
     margin-top: 0.5rem;
 }
 
 .progress {
-    background-color: #4caf50; /* Green progress bar */
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    line-height: 20px; /* Matches the height for centering text */
-    font-size: 0.9rem;
-    transition: width 1s ease-in-out; /* Smooth animation for progress bar */
+    background-color: #4caf50; /* Green bar */
+    height: 100%; /* Fill the height of the container */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align text */
+    line-height: 20px; /* Vertically center the text */
+    font-size: 0.9rem; /* Smaller font size for the percentage */
+    transition: width 0.5s ease-in-out; /* Smooth animation */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .skill p {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+    .progress {
+        font-size: 0.8rem; /* Adjust percentage font size */
+    }
 }
 /* Footer Styling */
 footer {
