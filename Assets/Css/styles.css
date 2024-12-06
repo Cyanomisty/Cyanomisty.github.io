@@ -67,7 +67,7 @@ header p {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 1rem;
 }
 
@@ -75,15 +75,10 @@ header p {
 .interactive-card {
     position: relative;
     width: 100%;
+    height: 250px; /* Increased height for proper content display */
     perspective: 1000px; /* Enables 3D effect */
-    transition: transform 0.3s ease-in-out; /* Smooth scaling */
 }
 
-.interactive-card:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-}
-
-/* Card Sides */
 .card-front, .card-back {
     position: absolute;
     width: 100%;
@@ -91,72 +86,52 @@ header p {
     backface-visibility: hidden; /* Hides the back side */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 1rem; /* Added padding for content */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.6s ease-in-out; /* Smooth flipping animation */
+    transition: transform 0.6s ease-in-out;
 }
 
 /* Front Side */
 .card-front {
     background-color: #fff;
     color: #333;
-    z-index: 2; /* Ensure it's on top initially */
+    z-index: 2;
 }
 
 /* Back Side */
 .card-back {
-    background-color: #4caf50; /* Green background */
+    background-color: #4caf50;
     color: #fff;
-    padding: 1rem; /* Adds internal spacing */
-    transform: rotateY(180deg); /* Starts flipped */
+    transform: rotateY(180deg);
 }
 
 /* Flip the Card */
 .interactive-card:hover .card-front {
-    transform: rotateY(180deg); /* Flips the front */
+    transform: rotateY(180deg);
 }
 
 .interactive-card:hover .card-back {
-    transform: rotateY(0); /* Reveals the back */
+    transform: rotateY(0);
 }
 
-/* Skills Section */
-.skill {
-    margin-bottom: 1.5rem;
-}
-
-.progress-bar {
-    background-color: #f4f4f9;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 20px;
-    width: 100%;
-    border: 1px solid #ddd;
-}
-
-.progress {
-    background-color: #4caf50; /* Green progress bar */
-    height: 100%;
-    color: #fff;
+/* Section Title */
+.section h2 {
     text-align: center;
-    line-height: 20px; /* Matches the height for centering text */
-    font-size: 0.9rem;
-    transition: width 1s ease-in-out; /* Smooth animation */
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* Responsive Design */
+/* Ensure cards look good on smaller screens */
 @media (max-width: 768px) {
+    .interactive-card {
+        height: auto; /* Let height adjust for smaller screens */
+    }
     .card-container {
         grid-template-columns: 1fr; /* Stack cards vertically */
-    }
-    .nav-menu {
-        flex-direction: column; /* Stack navigation links */
-    }
-    .skill {
-        text-align: center;
     }
 }
 /* Footer Styling */
