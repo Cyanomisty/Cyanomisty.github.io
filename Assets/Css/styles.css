@@ -134,6 +134,29 @@ header p {
         grid-template-columns: 1fr; /* Stack cards vertically */
     }
 }
+/* Skills Section */
+.skill {
+    margin-bottom: 1.5rem;
+}
+.progress-bar {
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+}
+
+.progress {
+    background-color: #4caf50; /* Green progress bar */
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px; /* Matches the height for centering text */
+    font-size: 0.9rem;
+    transition: width 1s ease-in-out; /* Smooth animation for progress bar */
+}
 /* Footer Styling */
 footer {
     background: #333; /* Dark background for footer */
