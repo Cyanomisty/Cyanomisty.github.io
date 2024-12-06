@@ -167,14 +167,3 @@ footer {
     padding: 1rem 0; /* Vertical spacing */
     margin-top: 2rem; /* Space between footer and previous content */
 }
-
-footer a {
-    color: #ffd700; /* Gold color for links */
-    text-decoration: none; /* Remove underline */
-    margin: 0 5px; /* Space between links */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #fff; /* Change to white on hover for visibility */
-}
