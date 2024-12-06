@@ -97,11 +97,17 @@ header p {
 
 /* Front Side */
 .card-front {
-    background-color: #fff;
-    color: #333;
+    background-color: #f4b400; /* Yellowish contrasting color */
+    color: #fff; /* White text for better contrast */
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Smooth corners */
+    padding: 1rem; /* Add padding for text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-
 /* Back Side */
 .card-back {
     background-color: #4caf50;
