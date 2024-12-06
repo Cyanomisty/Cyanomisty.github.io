@@ -1,11 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px; /* Set default font size to 12px */
+    font-size: 1rem; /* Default base font size (16px) */
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+}
+
+/* Section Styling for Responsive Width */
+.section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1200px; /* Allow wider sections on larger screens */
+    width: 90%;        /* Default width for responsive behavior */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Font Size */
+html {
+    font-size: 1vw; /* Base font size scales with the viewport width */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Set a fixed base size for smaller screens */
+    }
+
+    .section {
+        width: 95%;     /* Use more of the screen width on small devices */
+        padding: 1.5rem; /* Slightly reduce padding */
+    }
+}
+
+/* Media Query for Large Screens */
+@media (min-width: 1200px) {
+    .section {
+        width: 80%;     /* Slightly reduce width on very large screens */
+        padding: 3rem;  /* Increase padding for better spacing */
+    }
+
+    html {
+        font-size: 18px; /* Slightly larger font size for readability */
+    }
 }
 
 header {
