@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 12px; /* Set default font size to 12px */
+    font-size: 18px; /* Set default font size to 12px */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -134,13 +134,22 @@ header p {
     margin-bottom: 1rem;
 }
 
-/* Ensure cards look good on smaller screens */
+/* Interactive Card: Adjust height for smaller screens */
 @media (max-width: 768px) {
     .interactive-card {
-        height: auto; /* Let height adjust for smaller screens */
+        height: auto; /* Adjust height to fit content */
+        text-align: center; /* Center-align text for smaller screens */
     }
-    .card-container {
-        grid-template-columns: 1fr; /* Stack cards vertically */
+
+    .card-front, .card-back {
+        padding: 1rem; /* Add consistent padding */
+    }
+}
+
+/* Adjust Font Sizes for Smaller Screens */
+@media (max-width: 768px) {
+    .card-front h3, .card-back p {
+        font-size: 0.9rem; /* Slightly smaller font size for better fit */
     }
 }
 /* Skills Section */
