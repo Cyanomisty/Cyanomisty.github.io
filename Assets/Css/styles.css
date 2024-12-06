@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 12px; /* Set default font size to 12px */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -12,14 +13,16 @@ header {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    font-size: 12px; /* Ensures the header uses the new global font size */
 }
 
 header h1 {
     margin: 0;
+    font-size: 1.6rem; /* 1.6 times the base size = 19.2px for prominence */
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced from 1.2rem to match the new scale (12px base) */
 }
 
 /* Navigation Bar */
