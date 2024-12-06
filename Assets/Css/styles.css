@@ -164,6 +164,9 @@ html {
     padding: 1rem;
     transform: rotateY(180deg);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Matches front side */
+    overflow: auto;       /* Scroll if content exceeds the box */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+    max-height: 250px;    /* Limit the height of the box */
 }
 
 /* Flip the Card */
