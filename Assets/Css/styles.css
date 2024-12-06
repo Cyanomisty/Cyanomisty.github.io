@@ -114,7 +114,7 @@ header p {
 
 /* Back Side */
 .card-back {
-    background-color: #ffffff; /* Pure white for a clean and seamless look */
+    background-color: #e3f1ff; /* Pure white for a clean and seamless look */
     color: #555; /* Slightly lighter text color for contrast */
     border-radius: 8px;
     padding: 1rem;
