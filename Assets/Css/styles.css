@@ -191,7 +191,15 @@ html {
     font-size: 0.9rem; /* Smaller font size for the percentage */
     transition: width 0.5s ease-in-out; /* Smooth animation */
 }
+/* Custom color for Python progress bar */
+.python .progress {
+    background-color: #faf032;
+}
 
+/* Custom color for SQL progress bar */
+.sql .progress {
+    background-color: #faf032;
+}
 /* Add responsiveness */
 @media (max-width: 768px) {
     .skill p {
