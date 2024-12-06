@@ -22,6 +22,7 @@ header p {
     font-size: 1.2rem;
 }
 
+/* Navigation Bar */
 .nav-menu {
     display: flex;
     justify-content: center;
@@ -45,6 +46,7 @@ header p {
     color: #ffd700;
 }
 
+/* Section Styling */
 .section {
     padding: 2rem;
     margin: 1rem auto;
@@ -60,6 +62,7 @@ header p {
     border-bottom: 2px solid #ddd;
     padding-bottom: 0.5rem;
 }
+
 /* Card Container */
 .card-container {
     display: grid;
@@ -72,8 +75,12 @@ header p {
 .interactive-card {
     position: relative;
     width: 100%;
-    height: 200px; /* Fixed height for consistency */
     perspective: 1000px; /* Enables 3D effect */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
+}
+
+.interactive-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Card Sides */
@@ -81,10 +88,11 @@ header p {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hides the back side by default */
+    backface-visibility: hidden; /* Hides the back side */
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -100,8 +108,9 @@ header p {
 
 /* Back Side */
 .card-back {
-    background-color: #c2c4d1; /* Green background for the back */
+    background-color: #4caf50; /* Green background */
     color: #fff;
+    padding: 1rem; /* Adds internal spacing */
     transform: rotateY(180deg); /* Starts flipped */
 }
 
@@ -114,6 +123,7 @@ header p {
     transform: rotateY(0); /* Reveals the back */
 }
 
+/* Skills Section */
 .skill {
     margin-bottom: 1.5rem;
 }
@@ -134,13 +144,37 @@ header p {
     text-align: center;
     line-height: 20px; /* Matches the height for centering text */
     font-size: 0.9rem;
+    transition: width 1s ease-in-out; /* Smooth animation */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+    .nav-menu {
+        flex-direction: column; /* Stack navigation links */
+    }
+    .skill {
+        text-align: center;
+    }
+}
+/* Footer Styling */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: #fff;
-    margin-top: 2rem;
+    background: #333; /* Dark background for footer */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align text */
+    padding: 1rem 0; /* Vertical spacing */
+    margin-top: 2rem; /* Space between footer and previous content */
 }
 
+footer a {
+    color: #ffd700; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Space between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #fff; /* Change to white on hover for visibility */
+}
