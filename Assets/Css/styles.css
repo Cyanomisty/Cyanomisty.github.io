@@ -19,6 +19,48 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* New About Me Section Styling */
+.about-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about-content strong {
+    color: #222;
+    font-weight: bold;
+}
+
+.experience-list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.experience-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .about-content {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .experience-list {
+        padding-left: 1rem;
+    }
+}
+
 /* Responsive Font Size */
 html {
     font-size: 1vw; /* Base font size scales with the viewport width */
